@@ -17,7 +17,7 @@ create table error_log(
     error_timestamp timestamp default current_timestamp,
     data_source varchar2(50),
     target_table varchar2(50),
-    error_message varchar2(200)
+    error_message varchar2(4000)
 
 );
 
@@ -29,7 +29,7 @@ create table process_log(
     end_time timestamp,
     rows_processed integer,
     status varchar2(20),
-    error_message varchar2(200)
+    error_message varchar2(4000)
 
 );
 
